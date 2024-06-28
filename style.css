@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playfair Display", serif;
+}
+ul{
+    list-style: none;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: #ffdede;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-image-slice: 27 27 27 27;
+    border-image-width: 20px 20px 20px 20px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: stretch stretch;
+    border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-1.png");
+    border-style: solid; 
+}
+.container{
+    padding: 20px;
+    background: #ffff;
+    border-radius: 10px;
+    border-image-slice: 13 13 13 13;
+    border-image-width: 13px 13px 13px 13px;
+    border-image-outset: 13px 13px 13px 13px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url("https://mdn.github.io/css-examples/tools/border-image-generator/border-image-4.png");
+    border-style: solid; 
+}
+.container input{
+    padding: 8px 15px;
+    border: 0;
+    border-bottom: 2px solid rgb(216, 216, 216);
+    background: #ffff;
+    outline: 0;
+    transition: .4s;
+}
+.container input:focus{
+    border-color:rgb(50, 211, 255) ;
+}
+.container button{
+    padding: 8px 15px;
+    background:rgb(34, 135, 162);
+    border: 0;
+    color: #ffff;
+    transition: .4s;
+    
+}
+.container button:hover{
+    background:rgb(48, 189, 228);
+
+}
+.listContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+}
+.listContainer li{
+    background-color: aliceblue;
+    padding: 8px 15px 8px 30px;
+    position: relative;
+}
+.listContainer .List_item{
+    text-decoration: line-through;
+    color:rgb(140, 140, 140);
+}
+.listContainer .List_item span{
+    background: grey;
+}
+.listContainer li span{
+    height: 10px;
+    width: 10px;
+    background: transparent;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 2px solid grey;
+}
+.listContainer li i{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: .4s;
+}
+.listContainer li i:hover{
+    color: red;
+}
+.error{
+    padding: 8px 15px;
+    background: #a7a7a7;
+    color: red;
+    display: none;
+    margin-top: 20px;
+}
+.container h1{
+    text-align: center;
+    color: blue;
+    padding-bottom: 15px; 
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight:700;
+    font-style: normal;
+    font-style: italic;
+}
